@@ -1,13 +1,11 @@
-<?php
-
-  phpinfo();
-
-?><!DOCTYPE html>
-<html>
+<?php?><!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>CSE 341 | Ellen Carlson</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSE 341 | Ellen Carlson</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
