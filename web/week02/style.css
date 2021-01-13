@@ -5,6 +5,7 @@ body {
 div {
     border-radius: 5px;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 div:hover {
@@ -23,11 +24,17 @@ div:hover {
     background-color: #6b9080;
 }
 
-#clickme,
-#change-color {
+button {
     background-color: #eaf4f4;
     border: none;
     border-radius: 5px;
     padding: 1rem;
+}
+
+#clickme {
+    margin: 0 0 1rem 0;
+}
+
+#change-color {
     margin: 1rem 0;
 }
