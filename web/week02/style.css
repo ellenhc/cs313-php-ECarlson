@@ -1,5 +1,14 @@
+body {
+    margin: 2%;
+}
+
 div {
     border-radius: 5px;
+    padding: 1rem;
+}
+
+div:hover {
+    font-weight: bold;
 }
 
 .first-div {
@@ -14,7 +23,11 @@ div {
     background-color: #6b9080;
 }
 
-button {
+#clickme,
+#change-color {
     background-color: #eaf4f4;
+    border: none;
     border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
 }
