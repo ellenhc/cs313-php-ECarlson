@@ -10,7 +10,7 @@
 
 <body>
   <div>
-    <img src="Ellen.jpg" alt="Portrait of Ellen">
+    <img src="images/Ellen.jpg" alt="Portrait of Ellen">
     <div>
       <h1>Ellen Carlson</h1>
       <h2>Applied Technology Student</h2>
