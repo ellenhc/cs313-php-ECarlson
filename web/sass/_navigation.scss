@@ -1,9 +1,15 @@
-.navbar {
-    display: flex;
+nav {
+    margin-bottom: 2rem;
 }
 
-.navbar li {
-    padding: .5rem 1rem;
+.navbar {
+    display: flex;
+    li {
+        padding: .5rem 1rem;
+    }
+    li:first-child {
+        padding-left: 0;
+    }
 }
 
 .dropdown:hover .dropdown-menu {
@@ -15,13 +21,11 @@
     position: absolute;
     background-color: darkgray;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-menu a {
-    padding: 0.5rem 1rem;
-    display: block;
-}
-
-.dropdown-menu a:hover {
-    background-color: #f1f1f1
+    a {
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+    a:hover {
+        background-color: #f1f1f1
+    }
 }

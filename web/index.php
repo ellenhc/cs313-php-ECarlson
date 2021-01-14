@@ -11,31 +11,32 @@
 
 <nav>
   <ul class="navbar">
-    <li><a href="#">Home</a></li>
-    <li class="dropdown"><a href="#">Assignments</a>
+    <li><a href="index.php">Home</a></li>
+    <li class="dropdown"><a href="assignments.php">Assignments</a>
       <div class="dropdown-menu">
-        <a href="#">Week 01</a>
-        <a href="#">Week 02</a>
+        <a href="week01/hello.html">Week 01</a>
+        <a href="week02/teamactivity.html">Week 02</a>
       </div>
     </li>
   </ul>
 </nav>
 
 <body>
-<div class="container">
-  <img src="images/Ellen.jpg" alt="Portrait of Ellen">
+<div class="about-container">
+  <img src="images/Ellen1.jpg" alt="Portrait of Ellen">
   <div class="text-holder">
     <span>
+      <p>Greetings fellow aliens,</p>
       <h1>Ellen Carlson</h1>
-      <h4>Applied Technology Student</h4>
+      <h2>Applied Technology Student</h2>
     </span>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem lorem. Nunc sed nunc fringilla, tincidunt justo eu, efficitur justo. Praesent non metus tellus. Nulla sed fermentum tellus. Proin varius quam vitae maximus fermentum.</p>
+    <p>I'm a Seattle-based web development student studying online at BYU-Idaho. I've earned a certificate in web frontend and am finishing up work for web backend and graphic design. I have experience using HTML5, CSS, JavaScript, PHP, C++, C#, and Java.</p>
     <ul>
       <li><i class="fas fa-phone-alt"></i> 123-456-7890</li>
       <li><i class="fas fa-envelope"></i> fake@email.com</li>
     </ul>
-    <div>
-      <i class="fab fa-linkedin"></i>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/ellenhowarth/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
     </div>
   </div>

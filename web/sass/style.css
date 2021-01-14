@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,10 @@ img {
   max-width: 100%;
 }
 
+nav {
+  margin-bottom: 2rem;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,6 +26,10 @@ img {
 
 .navbar li {
   padding: .5rem 1rem;
+}
+
+.navbar li:first-child {
+  padding-left: 0;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -45,16 +54,35 @@ img {
 }
 
 body {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-size: 2.875em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.social i {
+  font-size: 2rem;
+}
+
+body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#cce3de), color-stop(#a4c3b2), to(#6b9080));
   background-image: linear-gradient(#cce3de, #a4c3b2, #6b9080);
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 2rem 4rem;
-  font-family: sans-serif;
 }
 
-img,
-.container {
+img {
   border-radius: 4px;
 }
 
@@ -63,12 +91,13 @@ img,
   color: darkgray;
 }
 
-.fas:hover,
+.fas:hover, .fas:hover,
+.fab:hover,
 .fab:hover {
   color: gray;
 }
 
-.container {
+.about-container {
   background-color: white;
   display: -ms-grid;
   display: grid;
@@ -79,6 +108,7 @@ img,
   padding: 1rem;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .text-holder {
@@ -92,5 +122,13 @@ img,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.assignment-container {
+  background-color: white;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 /*# sourceMappingURL=style.css.map */
