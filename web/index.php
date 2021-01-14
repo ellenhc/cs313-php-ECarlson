@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CSE 341 | Ellen Carlson</title>
   <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <nav>
@@ -22,7 +23,7 @@
 
 <body>
 <div class="container">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCGEvDyTBaWhglasxEnXefMl0-tS3QlzOQow&usqp=CAU" alt="Portrait of Ellen">
+  <img src="images/Ellen.jpg" alt="Portrait of Ellen">
   <div class="text-holder">
     <span>
       <h1>Ellen Carlson</h1>
