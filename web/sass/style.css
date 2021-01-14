@@ -5,6 +5,14 @@
           box-sizing: border-box;
 }
 
+ul li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
