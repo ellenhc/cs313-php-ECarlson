@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    padding: .5rem 1rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: darkgray;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1
+}

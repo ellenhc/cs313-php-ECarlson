@@ -5,14 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CSE 341 | Ellen Carlson</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sass/style.css">
 </head>
 
 <body>
-    <ul>
-      <li><a href="week01/hello.html">Week 01</a></li>
-      <li><a href="week02/teamactivity.html">Week 02</a></li>
-    </ul>
+  <div>
+    <img src="Ellen.jpg" alt="Portrait of Ellen">
+    <div>
+      <h1>Ellen Carlson</h1>
+      <h2>Applied Technology Student</h2>
+      <p>Some filler text to fill this paragraph space.</p>
+    </div>
+  </div>
 </body>
 
 </html>

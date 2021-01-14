@@ -1,0 +1,40 @@
+@import "reset";
+@import "navigation";
+body {
+    background-image: linear-gradient(#cce3de, #a4c3b2, #6b9080);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 2rem 4rem;
+    font-family: sans-serif;
+}
+
+img,
+.container {
+    border-radius: 4px;
+}
+
+.fas,
+.fab {
+    color: darkgray;
+}
+
+.fas:hover,
+.fab:hover {
+    color: gray;
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    justify-items: center;
+    padding: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.text-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
