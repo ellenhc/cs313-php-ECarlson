@@ -10,6 +10,10 @@ nav {
     li:first-child {
         padding-left: 0;
     }
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .dropdown:hover .dropdown-menu {
@@ -19,13 +23,13 @@ nav {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: darkgray;
+    background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     a {
         padding: 0.5rem 1rem;
         display: block;
     }
     a:hover {
-        background-color: #f1f1f1
+        background-color: #f5f5f5;
     }
 }
