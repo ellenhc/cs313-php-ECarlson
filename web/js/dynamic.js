@@ -1,6 +1,4 @@
-let x = document.getElementById("demo");
-x.addEventListener("mouseover", changeTextColor);
-
-function changeTextColor() {
-    x.style.color = "#6B9080";
-}
+let h1 = document.getElementById("demo");
+h1.addEventListener("mouseover", function() {
+    h1.style.color = "#6B9080";
+})

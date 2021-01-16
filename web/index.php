@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="sass/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0a5e9baade.js" crossorigin="anonymous"></script>
-  <script src="js/dynamic.js"></script>
 </head>
 
 <body>
@@ -47,6 +46,7 @@
   <footer>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/footer.php'; ?>
   </footer>
+  <script src="js/dynamic.js"></script>
 </body>
 
 </html>
