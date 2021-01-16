@@ -6,34 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CSE 341 | Ellen Carlson</title>
   <link rel="stylesheet" href="sass/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0a5e9baade.js" crossorigin="anonymous"></script>
+  <script src="js/dynamic.js"></script>
 </head>
 
 <body>
   <nav>
-    <ul class="navbar">
-      <li><a href="index.php">Home</a></li>
-      <li class="dropdown"><a href="assignments.php">Assignments <i class="fas fa-angle-down"></i></a>
-        <div class="dropdown-menu">
-          <a href="week01/hello.html">Week 01</a>
-          <a href="week02/teamactivity.html">Week 02</a>
-        </div>
-      </li>
-    </ul>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/navigation.php'; ?>
   </nav>
 
   <div class="solid-background"></div>
 
   <main>
     <div class="about-container main-card">
-      <img src="images/Ellen-small.jpg" alt="Portrait of Ellen">
+      <img src="images/Howarth6BSmall.jpg" alt="Portrait of Ellen">
       <div class="text-holder">
         <p>Hello, I'm</p>
-        <h1>Ellen Carlson</h1>
+        <h1 id="demo">Ellen Carlson</h1>
         <h3>Applied Technology Student</h3>
-        <p>I'm a Seattle-based web development student studying online at BYU-Idaho. I've earned a certificate in web frontend and am finishing up work for web backend and graphic design.</p>
+        <p>I'm a Seattle-based Applied Technology student studying online at BYU-Idaho. I'm focusing my studies on web development and have earned a certificate in web frontend development. I am currently finishing up certificates for web backend and graphic design.</p>
+        <p>I have experience using</p>
         <div class="code-icons">
           <p><i class="fab fa-html5"></i>HTML5</p>
           <p><i class="fab fa-css3-alt"></i>CSS</p>
@@ -43,14 +36,17 @@
           <p><i class="fas fa-code"></i>C++ C#</p>
         </div>
         <div class="social">
+          <p>Let's connect:</p>
           <a href="https://www.linkedin.com/in/ellenhowarth/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://byui-cse341-21w-02.slack.com" target="_blank"><i class="fab fa-slack"></i></a>
           <a href="https://github.com/ellenhc/cs313-php-ECarlson" target="_blank"><i class="fab fa-github-square"></i></a>
         </div>
       </div>
-    </div>
+</div>
   </main>
-  <footer></footer>
+  <footer>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/footer.php'; ?>
+  </footer>
 </body>
 
 </html>

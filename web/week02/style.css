@@ -1,14 +1,16 @@
 body {
-    margin: 2%;
+    margin: 2% !important;
 }
 
-div {
+.container {
     border-radius: 5px;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
-.container:hover {
+.first-div:hover,
+.sec-div:hover,
+.third-div:hover {
     font-weight: bold;
 }
 

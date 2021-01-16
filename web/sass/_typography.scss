@@ -1,3 +1,4 @@
+@import "colors";
 body {
     font-family: 'Merriweather', serif;
 }
@@ -15,8 +16,20 @@ h6 {
     font-family: 'Fira Sans', sans-serif;
 }
 
-.text-holder i,
+.code-icons i {
+    font-size: 2em;
+    padding-right: 0.5rem;
+}
+
 .social i {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-right: 1rem;
+}
+
+.fab,
+.fas {
+    color: $darkgray;
+    .social &:hover {
+        color: $wintergreendream;
+    }
 }
