@@ -8,7 +8,7 @@ div {
     margin-bottom: 1rem;
 }
 
-div:hover {
+.container:hover {
     font-weight: bold;
 }
 
