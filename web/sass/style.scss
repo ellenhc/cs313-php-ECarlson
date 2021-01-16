@@ -35,10 +35,11 @@ main {
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 .solid-background {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     position: absolute;
     top: 75%;
@@ -62,6 +63,11 @@ body {
     span {
         padding-bottom: 1rem;
     }
+}
+
+.code-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .social {
