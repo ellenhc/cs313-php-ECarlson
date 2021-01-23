@@ -1,0 +1,39 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1em;
+}
+
+.product-card {
+    img {
+        margin-bottom: 0.25em;
+    }
+    h5 {
+        margin-bottom: 1.5em;
+    }
+    .add-to-cart {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.add-to-cart {
+    padding: 0.75em 1em;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    &:hover {
+        border-color: rgb(119, 118, 120);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .product-container {
+        width: 70%;
+        margin: auto;
+    }
+    .product-card {
+        width: 25%;
+        max-width: 25%;
+    }
+}

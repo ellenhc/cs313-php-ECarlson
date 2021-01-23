@@ -32,9 +32,9 @@
       </div>
       <div class="assignment-card">
         <h5>Week 03</h5>
-        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#">Team Activity</a>
-        <a href="#">Prove Assignment</a>
+        <p>Create a simple PHP application to simulate a shopping cart.</p>
+        <a href="week03/teamactivity.php">Team Activity</a>
+        <a href="week03/view/browse.php">Prove Assignment</a>
       </div>
       <div class="assignment-card">
         <h5>Week 04</h5>

@@ -1,1 +1,1 @@
-<p>&copy 2021 All rights reserved | Ellen Howarth Carlson</p>
+<p>&copy; 2021 All rights reserved | Ellen Howarth Carlson</p>

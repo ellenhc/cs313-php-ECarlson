@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: #FFF1E6;
+}
+
+h5 {
+  color: #555555;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 1em;
+}
+
+.product-card img {
+  margin-bottom: 0.25em;
+}
+
+.product-card h5 {
+  margin-bottom: 1.5em;
+}
+
+.product-card .add-to-cart {
+  margin-bottom: 1.5rem;
+}
+
+.add-to-cart {
+  padding: 0.75em 1em;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add-to-cart:hover {
+  border-color: #777678;
+}
+
+@media screen and (min-width: 1024px) {
+  .product-container {
+    width: 70%;
+    margin: auto;
+  }
+  .product-card {
+    width: 25%;
+    max-width: 25%;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: -2px;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+  font-weight: lighter;
+}
+
+.price {
+  font-weight: bold;
+}
+
+footer p,
+footer h6 {
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+
+footer p:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  color: white;
+}
+
+footer i {
+  font-size: 1rem;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navbar li {
+  padding: .5rem 1rem;
+}
+
+.navbar li:first-child {
+  padding-left: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  padding: 1rem 0;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-content div {
+  margin-right: 10rem;
+}
+
+.footer-content .stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-content h6 {
+  padding-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  nav,
+  .footer-content {
+    width: 70%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

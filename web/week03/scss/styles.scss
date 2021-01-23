@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+@import "reset";
+@import "colors";
+@import "product-card";
+@import "typography";
+.navbar {
+    display: flex;
+    width: 100%;
+    li {
+        padding: .5rem 1rem;
+    }
+    li:first-child {
+        padding-left: 0;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+footer {
+    padding: 1rem 0;
+}
+
+.footer-content {
+    display: flex;
+    div {
+        margin-right: 10rem;
+    }
+    .stack {
+        display: flex;
+        flex-direction: column;
+    }
+    h6 {
+        padding-bottom: 0.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav,
+    .footer-content {
+        width: 70%;
+        margin: auto;
+    }
+}
