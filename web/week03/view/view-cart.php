@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <?php require $_SERVER['DOCUMENT_ROOT'] . 'week03/snippets/navbar.php'; ?>
+            <?php require $_SERVER['DOCUMENT_ROOT'] . '/week03/snippets/navbar.php'; ?>
         </nav>
     </header>
 
@@ -53,7 +53,7 @@
     </main>
 
     <footer>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . 'week03/snippets/footer.php'; ?>
+        <?php require $_SERVER['DOCUMENT_ROOT'] . '/week03/snippets/footer.php'; ?>
     </footer>
 </body>
 
