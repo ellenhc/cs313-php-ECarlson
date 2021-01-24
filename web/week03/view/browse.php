@@ -22,7 +22,7 @@ session_start();
     <main>
         <div class="product-container">
         <?php
-            require $_SERVER['DOCUMENT_ROOT'] . 'week03/products.php';
+            require $_SERVER['DOCUMENT_ROOT'] . '/week03/products.php';
             foreach($products as $productId => $item){
                 $card = '<div class="product-card">';
                 $card .= "<img src='$item[image]'>\n";

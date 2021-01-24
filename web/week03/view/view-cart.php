@@ -1,4 +1,4 @@
-<?php require $_SERVER['DOCUMENT_ROOT'] . 'week03/products.php';
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/week03/products.php';
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
