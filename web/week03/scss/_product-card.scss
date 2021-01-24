@@ -28,11 +28,13 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .product-container {
+    .product-container,
+    .cart-container {
         width: 70%;
-        margin: auto;
+        margin: 2rem auto;
     }
-    .product-card {
+    .product-card,
+    .cart-card {
         width: 25%;
         max-width: 25%;
     }

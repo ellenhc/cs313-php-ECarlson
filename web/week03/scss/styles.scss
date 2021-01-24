@@ -18,6 +18,26 @@
     }
 }
 
+.cart-card {
+    margin: 0 0 1rem 0;
+}
+
+.subtotal {
+    margin: 3rem 0 1rem 0;
+}
+
+.btn-checkout {
+    padding: 0.875em 1.5em;
+    border-radius: 3px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    &:hover {
+        background-color: rgb(85, 85, 85);
+    }
+}
+
 footer {
     padding: 1rem 0;
 }

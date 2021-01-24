@@ -20,6 +20,12 @@ a {
   color: black;
 }
 
+.button {
+  background-color: white;
+  border: none;
+  font-size: 1rem;
+}
+
 header {
   background-color: #FFF1E6;
 }
@@ -71,11 +77,13 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  .product-container {
+  .product-container,
+  .cart-container {
     width: 70%;
-    margin: auto;
+    margin: 2rem auto;
   }
-  .product-card {
+  .product-card,
+  .cart-card {
     width: 25%;
     max-width: 25%;
   }
@@ -142,6 +150,27 @@ footer i {
 .navbar a {
   text-decoration: none;
   color: black;
+}
+
+.cart-card {
+  margin: 0 0 1rem 0;
+}
+
+.subtotal {
+  margin: 3rem 0 1rem 0;
+}
+
+.btn-checkout {
+  padding: 0.875em 1.5em;
+  border-radius: 3px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-checkout:hover {
+  background-color: #555555;
 }
 
 footer {

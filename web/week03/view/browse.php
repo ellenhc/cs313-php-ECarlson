@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?><!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -17,60 +21,25 @@
 
     <main>
         <div class="product-container">
-            <div class="product-card">
-                <img src="../images/bar-soap.jpg" alt="stack of 3 bar soaps">
-                <h4>Product name</h4>
-                <h5>Product subtitle</h5>
-                <a href="#" class="add-to-cart">
-                    <p>Add to cart</p>
-                    <p class="price">Price</p>
-                </a>
-            </div>
-            <div class="product-card">
-                <img src="../images/body-oil.jpg" alt="bottle of coconut body oil">
-                <h4>Coconut Oil</h4>
-                <h5>hydrating body oil</h5>
-                <a href="#" class="add-to-cart">
-                    <p>Add to cart</p>
-                    <p class="price">Price</p>
-                </a>
-            </div>
-            <div class="product-card">
-                <img src="../images/eyeshadow.jpg" alt="pot of pink eyeshadow">
-                <h4>Product name</h4>
-                <h5>vibrant powdered eyeshadow</h5>
-                <a href="#" class="add-to-cart">
-                    <p>Add to cart</p>
-                    <p class="price">Price</p>
-                </a>
-            </div>
-            <div class="product-card">
-                <img src="../images/hand-sanitizer.jpg" alt="pump bottle of hand sanitizer">
-                <h4>Product name</h4>
-                <h5>soothing aloe + sanitization</h5>
-                <a href="#" class="add-to-cart">
-                    <p>Add to cart</p>
-                    <p class="price">Price</p>
-                </a>
-            </div>
-            <div class="product-card">
-                <img src="../images/hand-soap.jpg" alt="pump bottle of hand soap">
-                <h4>Product name</h4>
-                <h5>Product subtitle</h5>
-                <a href="#" class="add-to-cart">
-                    <p>Add to cart</p>
-                    <p class="price">Price</p>
-                </a>
-            </div>
-            <div class="product-card">
-                <img src="../images/lipstick.jpg" alt="red Clinique lipstick">
-                <h4>Product name</h4>
-                <h5>Product subtitle</h5>
-                <a href="#" class="add-to-cart">
-                    <p>Add to cart</p>
-                    <p class="price">Price</p>
-                </a>
-            </div>
+        <?php
+            require $_SERVER['DOCUMENT_ROOT'] . 'week03/products.php';
+            foreach($products as $productId => $item){
+                $card = '<div class="product-card">';
+                $card .= "<img src='$item[image]'>\n";
+                $card .= "<h4>$item[name]</h4>\n";
+                $card .= "<h5>$item[subtitle]</h5>\n";
+                $card .= '<div class="add-to-cart">';
+                $card .= '<form action="../index.php" method="post"> 
+                <input type="submit" class="button" value="Add to cart" />
+                <input type="hidden" name="productId" value="'.$productId.'">
+                <input type="hidden" name="action" value="add-to-cart">
+                </form>';
+                $card .= '<p class="price">Price</p>';
+                $card .= '</div>';
+                $card .= '</div>';
+                echo $card;
+            }
+        ?>
         </div>
     </main>
 
