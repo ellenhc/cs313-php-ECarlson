@@ -5,7 +5,7 @@
 session_start();
 
 //require
-require $_SERVER['DOCUMENT_ROOT'] . 'week03/products.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/week03/products.php';
 
 //check if cart exists or not
 if(!isset($_SESSION['cart'])){
