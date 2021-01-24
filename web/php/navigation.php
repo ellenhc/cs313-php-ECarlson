@@ -4,6 +4,7 @@
         <div class="dropdown-menu">
             <a href="week01/hello.html">Week 01</a>
             <a href="week02/teamactivity.html">Week 02</a>
+            <a href="week03/view/browse.php">Week 03</a>
         </div>
     </li>
 </ul>
