@@ -1,4 +1,7 @@
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/week03/products.php';
+<?php 
+require $_SERVER['DOCUMENT_ROOT'] . '/week03/products.php';
+// Create or access a Session
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -19,7 +22,7 @@
     </header>
 
     <main>
-        <div class="cart-container">
+        <div class="page-container">
             <?php
             if (!isset($_SESSION['cart'])) {
                 $msg = "Your cart is empty.";
@@ -42,10 +45,8 @@
                     $subtotal += $itemTotal;
                 }
                 $checkoutForm = '<div class="subtotal">';
-                $checkoutForm .= "<h4>Subtotal $$subtotal'</h4></div>";
-                $checkoutForm .= '<form action="../index.php" method="post">';
-                $checkoutForm .= '<input type="submit" class="btn-checkout" value="Checkout" />';
-                $checkoutForm .= '<input type="hidden" name="action" value="checkout"></form>';
+                $checkoutForm .= "<h4>Subtotal $$subtotal</h4></div>";
+                $checkoutForm .= '<a href="/week03/view/checkout.php" class="btn-checkout">Checkout</a">';
                 echo $checkoutForm;
             }
             ?>

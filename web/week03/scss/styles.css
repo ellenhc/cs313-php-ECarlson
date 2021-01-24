@@ -78,7 +78,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .product-container,
-  .cart-container {
+  .page-container {
     width: 70%;
     margin: 2rem auto;
   }
@@ -171,6 +171,20 @@ footer i {
 
 .btn-checkout:hover {
   background-color: #555555;
+}
+
+.checkout-form label,
+.checkout-form input {
+  display: block;
+}
+
+.checkout-form input {
+  padding: 0.875em 1.5em;
+  border-radius: 3px;
+}
+
+.checkout-form .btn-checkout {
+  margin: 2rem 0;
 }
 
 footer {

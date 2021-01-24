@@ -1,5 +1,5 @@
-<a href="browse.php" class="logo">Logo</a>
+<a href="browse.php" class="logo">ShoppingCart</a>
 <ul class="navbar">
-    <li><a href="..\view\browse.php">Home</a></li>
-    <li><a href="..\view\view-cart.php"><i class="fas fa-shopping-cart"></i></a></li>
+    <li><a href="/week03/view/browse.php">Home</a></li>
+    <li><a href="/week03/view/view-cart.php"><i class="fas fa-shopping-cart"></i></a></li>
 </ul>

@@ -38,6 +38,20 @@
     }
 }
 
+.checkout-form {
+    label,
+    input {
+        display: block;
+    }
+    input {
+        padding: 0.875em 1.5em;
+        border-radius: 3px;
+    }
+    .btn-checkout {
+        margin: 2rem 0;
+    }
+}
+
 footer {
     padding: 1rem 0;
 }
