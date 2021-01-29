@@ -1,9 +1,15 @@
+CREATE TABLE households (
+    householdId SERIAL PRIMARY KEY NOT NULL,
+    householdName VARCHAR(255) NOT NULL
+);
+
 CREATE TABLE users (
     userId SERIAL PRIMARY KEY NOT NULL,
     userFirstName varchar(255) NOT NULL,
     userLastName varchar(255) NOT NULL,
     userEmail varchar(255) NOT NULL,
-    userPassword varchar(255) NOT NULL
+    userPassword varchar(255) NOT NULL,
+    householdId int REFERENCES households NOT NULL
 );
 
 CREATE TABLE categories (
@@ -29,12 +35,14 @@ CREATE TABLE expenses (
     expensePrice money NOT NULL,
     expenseDate date NOT NULL,
     categoryId int REFERENCES categories NOT NULL,
-    userId int REFERENCES users NOT NULL
+    userId int REFERENCES users NOT NULL,
+    householdId int REFERENCES households NOT NULL
 );
 
 CREATE TABLE budgets (
     budgetId SERIAL PRIMARY KEY NOT NULL,
     budgetName varchar(255) NOT NULL,
     budgetAmount money NOT NULL,
-    categoryId int REFERENCES categories NOT NULL
+    categoryId int REFERENCES categories NOT NULL,
+    householdId int REFERENCES households NOT NULL
 );
