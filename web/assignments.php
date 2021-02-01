@@ -38,15 +38,15 @@
       </div>
       <div class="assignment-card">
         <h5>Week 04</h5>
-        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p>Created a SQL file for all the steps necessary to create the tables needed for my project.</p>
         <a href="#">Team Activity</a>
         <a href="#">Prove Assignment</a>
       </div>
       <div class="assignment-card">
         <h5>Week 05</h5>
-        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p>Complete read-only access to your database from your web application. There should be some test data in the database, and PHP pages in place to query for that data and render it to the user.</p>
         <a href="#">Team Activity</a>
-        <a href="#">Prove Assignment</a>
+        <a href="https://cryptic-woodland-83416.herokuapp.com/">Prove Assignment</a>
       </div>
       <div class="assignment-card">
         <h5>Week 06</h5>
