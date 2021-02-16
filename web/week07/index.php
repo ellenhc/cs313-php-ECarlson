@@ -2,8 +2,8 @@
 // Create or access a Session
 session_start();
 
-require_once '/library/connections.php';
-require_once 'model.php';
+require_once 'week07/library/connections.php';
+require_once 'week07/model.php';
 
 $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);
 if ($action == NULL) {
@@ -24,15 +24,15 @@ switch ($action) {
 
         if ($regOutcome === 1) {
             //$message = "<p class='notice'>Thanks for registering. Please use your email and password to login.</p>";
-            header('Location: /accounts/?action=login'); // After inserting the user, redirect to the sign-in page
+            header('Location: week07/index.php?action=login'); // After inserting the user, redirect to the sign-in page
             exit;
         } else {
             //$message = "<p class='notice'>Rregistration failed. Please try again.</p>";
-            include '/view/register.php';
+            include 'week07/view/register.php';
             exit;
         }
         case 'register':
-            include '/view/register.php';
+            include 'week07/view/register.php';
             break;
         case 'Login':
             $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
@@ -47,20 +47,20 @@ switch ($action) {
             // If an incorrect password is entered, stay on this page
             if(!$hashCheck){
                 $message = 'Invalid username or password. Please try again.';
-                include '../view/login.php';
+                include 'week07/view/login.php';
                 exit;
             }
             // If a correct username/password is entered, save the userId to the session and redirect to the welcome page
             $_SESSION['loggedin'] = TRUE;
             array_pop($userData); // removes the user's password from the array BEFORE storing in the session
             $_SESSION['userData'] = $userData; // saves the user data in the session
-            include '/view/welcome.php';
+            include 'week07/view/welcome.php';
             exit;
         case 'login':
-            include '/view/login.php';
+            include 'week07/view/login.php';
             break;
         default:
-            include '/view/register.php';
+            include 'week07/view/register.php';
             break;
     }
 ?>
