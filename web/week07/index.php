@@ -23,7 +23,7 @@ switch ($action) {
         $regOutcome = registerUser($username, $hashedPassword);
 
         if ($regOutcome === 1) {
-            $_SESSION['message'] = "<p>Thanks for registering. Please use your email and password to login.</p>";
+            $_SESSION['message'] = "<p>Thanks for registering $userData[username]. Please use your email and password to login.</p>";
             header('Location: index.php?action=login'); // After inserting the user, redirect to the sign-in page
             exit;
         } else {
