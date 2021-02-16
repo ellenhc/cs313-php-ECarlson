@@ -1,7 +1,7 @@
 <?php
 if (!$_SESSION['loggedin']) {
     //if not logged in, send to sign-up page
-    header('Location: /index.php?action=register');
+    header('Location: index.php?action=register');
     exit;
 }
 ?><!DOCTYPE html>
@@ -19,7 +19,7 @@ if (!$_SESSION['loggedin']) {
     if (isset($message)) {
         echo "<b>$message</b>";
     }
-    echo "<p>Welcome $_SESSION[userData]['username']</p>";
+    echo "<p>Welcome $userData[username]</p>";
     ?>
 </body>
 
