@@ -14,7 +14,7 @@
         echo "<b>$message</b>";
     }
     ?>
-    <form action="../index.php" method="post">
+    <form action="index.php" method="post">
         <label for="username">Name</label>
         <input type="text" id="username" name="username" required>
         <label for="userPassword">Password</label>

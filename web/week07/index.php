@@ -23,11 +23,11 @@ switch ($action) {
         $regOutcome = registerUser($username, $hashedPassword);
 
         if ($regOutcome === 1) {
-            //$message = "<p class='notice'>Thanks for registering. Please use your email and password to login.</p>";
+            $message = "<p>Thanks for registering. Please use your email and password to login.</p>";
             header('Location: index.php?action=login'); // After inserting the user, redirect to the sign-in page
             exit;
         } else {
-            //$message = "<p class='notice'>Rregistration failed. Please try again.</p>";
+            $message = "<p>Rregistration failed. Please try again.</p>";
             include './view/register.php';
             exit;
         }
