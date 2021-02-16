@@ -49,10 +49,10 @@
         <a href="https://cryptic-woodland-83416.herokuapp.com/">Prove Assignment</a>
       </div>
       <div class="assignment-card">
-        <h5>Week 06</h5>
-        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#">Team Activity</a>
-        <a href="#">Prove Assignment</a>
+        <h5>Week 07</h5>
+        <p>The assignment is to create a simple login page and allow users to sign up with a new username and password. In doing so, you'll use password hashing libraries to keep passwords secret.</p>
+        <a href="week07/index.php">Team Activity</a>
+        <a href="https://cryptic-woodland-83416.herokuapp.com/">Prove Assignment</a>
       </div>
     </div>
   </main>
