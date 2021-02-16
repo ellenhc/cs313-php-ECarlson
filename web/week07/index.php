@@ -30,18 +30,17 @@ switch ($action) {
             include './view/register.php';
             exit;
         }
-        else{
-            // Check if password has at least 7 characters and a number
-            $checkPassword = checkPassword($userPassword);
-
+        // Check if password has at least 7 characters and a number
+        $checkPassword = checkPassword($userPassword);
+        if($checkPassword == 1){
             // Uses password_hash() function to hash the password
             $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);
-            
+        
             // Send the user data to the model
             $regOutcome = registerUser($username, $hashedPassword);
-            
+        
             if ($regOutcome === 1) {
-                $_SESSION['message'] = "<p>Thanks for registering $username. Please use your email and password to login.</p>";
+             $_SESSION['message'] = "<p>Thanks for registering $username. Please use your email and password to login.</p>";
                 header('Location: index.php?action=login'); // After inserting the user, redirect to the sign-in page
                 exit;
             } else {
@@ -49,6 +48,11 @@ switch ($action) {
                 include './view/register.php';
                 exit;
             }
+        }
+        else{
+            $message = "<p class='notice'>Password needs to contain at least 7 digits and 1 number.</p>";
+            include './view/register.php';
+                exit;
         }
         case 'register':
             include './view/register.php';
