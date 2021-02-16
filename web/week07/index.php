@@ -23,21 +23,22 @@ switch ($action) {
             include './view/register.php';
             exit;
         }
-
-        // Uses password_hash() function to hash the password
-        $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);
-
-        // Send the user data to the model
-        $regOutcome = registerUser($username, $hashedPassword);
-
-        if ($regOutcome === 1) {
-            $_SESSION['message'] = "<p>Thanks for registering $username. Please use your email and password to login.</p>";
-            header('Location: index.php?action=login'); // After inserting the user, redirect to the sign-in page
-            exit;
-        } else {
-            $message = "<p>Registration failed. Please try again.</p>";
-            include './view/register.php';
-            exit;
+        else{
+            // Uses password_hash() function to hash the password
+            $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);
+            
+            // Send the user data to the model
+            $regOutcome = registerUser($username, $hashedPassword);
+            
+            if ($regOutcome === 1) {
+                $_SESSION['message'] = "<p>Thanks for registering $username. Please use your email and password to login.</p>";
+                header('Location: index.php?action=login'); // After inserting the user, redirect to the sign-in page
+                exit;
+            } else {
+                $message = "<p>Registration failed. Please try again.</p>";
+                include './view/register.php';
+                exit;
+            }
         }
         case 'register':
             include './view/register.php';
