@@ -59,6 +59,11 @@ switch ($action) {
         case 'login':
             include './view/login.php';
             break;
+        case 'signout':
+            unset($_SESSION['username']);
+            header("Location: index.php?action=login.php");
+            die();
+            break;
         default:
             include './view/register.php';
             break;

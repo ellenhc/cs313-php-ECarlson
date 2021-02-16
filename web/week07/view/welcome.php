@@ -21,6 +21,7 @@ if (!$_SESSION['loggedin']) {
     }
     echo "<p>Welcome $userData[username]</p>";
     ?>
+    <a href="index.php?action=signout">Sign Out</a>
 </body>
 
 </html>
