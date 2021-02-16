@@ -5,6 +5,7 @@
     <title>Team Activity | Week07</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -19,6 +20,8 @@
         <input type="text" id="username" name="username" required>
         <label for="userPassword">Password</label>
         <input type="password" id="userPassword" name="userPassword" required>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
         <input type="submit" name="submit" value="Register">
         <input type="hidden" name="action" value="Register">
         <p>Already have an account? <a href="index.php?action=login">Log in</a></p>
