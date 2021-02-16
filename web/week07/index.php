@@ -2,7 +2,7 @@
 // Create or access a Session
 session_start();
 
-require_once 'week07/library/connections.php';
+require_once '../library/connections.php';
 require_once 'week07/model.php';
 
 $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);

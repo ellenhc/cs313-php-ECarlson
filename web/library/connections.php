@@ -14,7 +14,7 @@ function databaseConnect()
         return $db;
     } catch (PDOException $e) {
         echo 'Error:' . $e->getMessage();
-        header('Location: /view/500.php');
+        header('Location: /500.php'); 
         die();
     }
 }
