@@ -7,26 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>
-        $(document).ready(function() {
-                    $("#submitButton").click(function(e) {
-                        e.preventDefault();
-                        var matched,
-                            password = $("#userPassword").val(),
-                            confirm = $("#confirmPassword").val();
-
-                        matched = (password == confirm) ? true : false;
-                        if (matched) {
-                            //Submit line commented out for example.  In production, remove the //
-                            $("#register-form").submit(); 
-
-                            //Shows success message and prevents submission.  In production, comment out the next 2 lines.
-                            $("#responseDiv").html("Passwords Match");
-                            return false;
-                        } else {
-                            $("#responseDiv").html("Passwords don't match...");
-                            return false;
-                        }
-                    });
+        function check(){
+            if (document.getElementById('userPassword').value == document.getElementById('confirmPassword')){
+                document.getElementById('responseDiv').innerHTML = 'matching';
+            }
+            else{
+                document.getElementById('responseDiv').innerHTML = 'passwords do not match.';
+            }
+        }
     </script>
 </head>
 
@@ -44,11 +32,11 @@
         <label for="userPassword">Password <?php if (isset($_SESSION['noMatch'])) {
                                                 echo $_SESSION['noMatch'];
                                             } ?></label>
-        <input type="password" id="userPassword" name="userPassword" pattern="(?=^.{7,}$)(?=.*\d)(?=.*[a-z]).*$" required>
+        <input type="password" id="userPassword" name="userPassword" pattern="(?=^.{7,}$)(?=.*\d)(?=.*[a-z]).*$" required onkeyup='check();'>
         <label for="confirmPassword">Confirm Password <?php if (isset($_SESSION['noMatch'])) {
                                                             echo $_SESSION['noMatch'];
                                                         } ?></label>
-        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <input type="password" id="confirmPassword" name="confirmPassword" required onkeyup='check();'>
         <div id="responseDiv"></div>
         <input type="submit" name="submit" value="Register" id="submitButton">
         <input type="hidden" name="action" value="Register">
