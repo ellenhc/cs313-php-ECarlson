@@ -6,6 +6,7 @@
             <a href="week02/teamactivity.html">Week 02</a>
             <a href="week03/view/browse.php">Week 03</a>
             <a href="week07/index.php">Week 07</a>
+            <a href="week07-ta/index.php">Week 07-TA</a>
         </div>
     </li>
 </ul>

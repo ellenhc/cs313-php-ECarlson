@@ -26,7 +26,6 @@
         <input type="submit" value="Login">
         <input type="hidden" name="action" value="Login">
         <p>Not registered? <a href="index.php?action=register">Create an account</a></p>
-        </form>
     </form>
 </body>
 

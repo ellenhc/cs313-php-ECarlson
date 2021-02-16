@@ -1,3 +1,8 @@
 input {
     display: block;
 }
+
+.notice {
+    color: red;
+    font-weight: 700;
+}

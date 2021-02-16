@@ -15,6 +15,14 @@ switch ($action) {
         // Filter and store the data
         $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
         $userPassword = filter_input(INPUT_POST, 'userPassword', FILTER_SANITIZE_STRING);
+        $confirmPassword = filter_input(INPUT_POST, 'userPassword', FILTER_SANITIZE_STRING);
+
+        if ($userPassword != $confirmPassword){
+            $message = "<p class='notice'>Passwords do not match. Try again.</p>";
+            $_SESSION['noMatch'] = "*";
+            include './view/register.php';
+            exit;
+        }
 
         // Uses password_hash() function to hash the password
         $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);

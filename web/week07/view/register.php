@@ -18,9 +18,9 @@
     <form action="index.php" method="post">
         <label for="username">Name</label>
         <input type="text" id="username" name="username" required>
-        <label for="userPassword">Password</label>
+        <label for="userPassword">Password <?php if(isset($_SESSION['noMatch'])){echo $_SESSION['noMatch'];}?></label>
         <input type="password" id="userPassword" name="userPassword" required>
-        <label for="confirmPassword">Confirm Password</label>
+        <label for="confirmPassword">Confirm Password <?php if(isset($_SESSION['noMatch'])){echo $_SESSION['noMatch'];}?></label>
         <input type="password" id="confirmPassword" name="confirmPassword" required>
         <input type="submit" name="submit" value="Register">
         <input type="hidden" name="action" value="Register">
