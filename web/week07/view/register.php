@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>
-        function check(){
-            if (document.getElementById('userPassword').value == document.getElementById('confirmPassword')){
+        var check = function() {
+            if (document.getElementById('userPassword').value ==
+                document.getElementById('confirmPassword').value) {
+                document.getElementById('responseDiv').style.color = 'green';
                 document.getElementById('responseDiv').innerHTML = 'matching';
-            }
-            else{
-                document.getElementById('responseDiv').innerHTML = 'passwords do not match.';
+            } else {
+                document.getElementById('responseDiv').style.color = 'red';
+                document.getElementById('responseDiv').innerHTML = 'not matching';
             }
         }
     </script>
