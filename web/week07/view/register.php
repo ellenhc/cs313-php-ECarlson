@@ -20,7 +20,7 @@
         <input type="text" id="username" name="username" required>
         <p class='info'>Password must be at least 7 characters and contain a number.</p>
         <label for="userPassword">Password <?php if(isset($_SESSION['noMatch'])){echo $_SESSION['noMatch'];}?></label>
-        <input type="password" id="userPassword" name="userPassword" required>
+        <input type="password" id="userPassword" name="userPassword" pattern="(?=^.{7,}$)(?=.*\d)(?=.*[a-z]).*$" required>
         <label for="confirmPassword">Confirm Password <?php if(isset($_SESSION['noMatch'])){echo $_SESSION['noMatch'];}?></label>
         <input type="password" id="confirmPassword" name="confirmPassword" required>
         <input type="submit" name="submit" value="Register">

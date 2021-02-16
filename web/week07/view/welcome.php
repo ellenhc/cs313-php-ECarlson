@@ -20,7 +20,7 @@ if (!$_SESSION['loggedin']) {
     if (isset($message)) {
         echo "<b>$message</b>";
     }
-    echo "<p>Welcome $userData[username]</p>";
+    echo "<p>Welcome, $userData[username]</p>";
     ?>
     <a href="index.php?action=signout">Sign Out</a>
 </body>

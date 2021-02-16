@@ -26,7 +26,7 @@ switch ($action) {
 
         if ($userPassword != $confirmPassword){
             $message = "<p class='notice'>Passwords do not match. Try again.</p>";
-            $_SESSION['noMatch'] = "<p class='notice'>*</p>";
+            $_SESSION['noMatch'] = "<span class='notice'>*</span>";
             include './view/register.php';
             exit;
         }
