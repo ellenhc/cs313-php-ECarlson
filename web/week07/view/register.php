@@ -21,6 +21,7 @@
         <input type="password" id="userPassword" name="userPassword" required>
         <input type="submit" name="submit" value="Register">
         <input type="hidden" name="action" value="Register">
+        <p>Already have an account? <a href="index.php?action=login">Log in</a></p>
     </form>
 </body>
 
