@@ -3,7 +3,7 @@
 session_start();
 
 require_once '../library/connections.php';
-require_once '../model.php';
+require_once 'model.php';
 
 $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);
 if ($action == NULL) {
