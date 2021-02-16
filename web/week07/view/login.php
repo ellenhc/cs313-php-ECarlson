@@ -13,6 +13,9 @@
     if (isset($message)) {
         echo "<b>$message</b>";
     }
+    else if (isset($_SESSION['message'])){
+        echo "<b>$_SESSION[message]</b>";
+    }
     ?>
     <form action="index.php" method="post">
         <label for="username">Username:</label>
