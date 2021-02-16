@@ -10,6 +10,13 @@ if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
 }
 
+function checkPassword($userPassword) {
+    // Checks the password for a 7 character min, 1 capital letter, 1 number, 1 special character
+    $pattern = '/^(?=.*[[:digit:]])(?=.*[a-z])([^\s]){7,}$/';
+    // Returns 1 if they match. Returns 0 if they don't
+    return preg_match($pattern, $userPassword);
+}
+
 switch ($action) {
     case 'Register':
         // Filter and store the data
@@ -19,11 +26,14 @@ switch ($action) {
 
         if ($userPassword != $confirmPassword){
             $message = "<p class='notice'>Passwords do not match. Try again.</p>";
-            $_SESSION['noMatch'] = "*";
+            $_SESSION['noMatch'] = "<p class='notice'>*</p>";
             include './view/register.php';
             exit;
         }
         else{
+            // Check if password has at least 7 characters and a number
+            $checkPassword = checkPassword($userPassword);
+
             // Uses password_hash() function to hash the password
             $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);
             

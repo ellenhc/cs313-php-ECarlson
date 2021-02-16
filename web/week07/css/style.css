@@ -6,3 +6,7 @@ input {
     color: red;
     font-weight: 700;
 }
+
+.info {
+    font-size: smaller;
+}
