@@ -19,7 +19,7 @@ if (!$_SESSION['loggedin']) {
     if (isset($message)) {
         echo "<b>$message</b>";
     }
-    echo "<p>Welcome $_SESSION[userData][username]</p>";
+    echo "<p>Welcome $_SESSION[userData]['username']</p>";
     ?>
 </body>
 
