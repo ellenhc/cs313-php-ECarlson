@@ -54,6 +54,12 @@
         <a href="week07/index.php">Team Activity</a>
         <a href="https://cryptic-woodland-83416.herokuapp.com/">Prove Assignment</a>
       </div>
+      <div class="assignment-card">
+        <h5>Week 08</h5>
+        <p>The assignment is to create a simple login page and allow users to sign up with a new username and password. In doing so, you'll use password hashing libraries to keep passwords secret.</p>
+        <a href="week8/http-collect.js">Team Activity</a>
+        <a href="week08/prove.js">Prove Assignment</a>
+      </div>
     </div>
   </main>
   <footer>
